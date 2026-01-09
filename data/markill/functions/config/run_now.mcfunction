@@ -1,0 +1,1 @@
+function markill:cleanup_markers

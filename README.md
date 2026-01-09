@@ -11,6 +11,14 @@ MarKill is a Minecraft Java Edition datapack that deletes all `minecraft:marker`
 
 - Every 10 minutes, runs: `kill @e[type=minecraft:marker]`.
 
+## Commands
+
+- Enable: `/function markill:config/enable`
+- Disable: `/function markill:config/disable`
+- Run now: `/function markill:config/run_now`
+- Set interval: `/function markill:config/set_interval_10m`, `/function markill:config/set_interval_5m`, `/function markill:config/set_interval_1m`, `/function markill:config/set_interval_30s`
+- Custom interval (ticks): `/scoreboard players set #global markill_interval <ticks>` then `/scoreboard players operation #global markill_timer = #global markill_interval`
+
 ## Build
 
 Run `./build.sh` to create `dist/markill.zip` for distribution.
